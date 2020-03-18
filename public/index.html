@@ -4,25 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stan Wielga</title>
+
   <style>
     body {
       margin: 0;
-    }
-    h1 {
-      margin: 0;
-    }
-    #particles-js {
       width: 100vw;
       height: 100vh;
-      background-color: #3787a7;
+      background-color: rgba(12, 170, 220, 1);
+      color: rgba(0, 16, 33, 1);
     }
+    h1 {
+      position: absolute;
+      margin: 0;
+      font-size: 80px;
+      padding-left: 20px;
+    }
+    #particles-js {
+      background-color: rgba(17, 181, 228, 1);
+      width: 100vw;
+      height: 100vh;
+    }
+    .color-dark{ rgba(0, 16, 33, 1);}
+    .color-green{ rgba(3, 71, 72, 1);}
+    .color-dark-blue{ rgba(20, 129, 186, 1);}
+    .color-light-blue{ rgba(17, 181, 228, 1);}
+    .color-blue{ rgba(12, 170, 220, 1);}
   </style>
+
   <script src="particles.min.js"></script>
   <script>
-    particlesJS.load('particles-js', 'particles.json', function() {
-      console.log('callback - particles.js config loaded');
-    });
+    particlesJS.load('particles-js', 'particles.json');
   </script>
+
 </head>
 <body>
   <div id="particles-js">
