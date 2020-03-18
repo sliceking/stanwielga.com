@@ -4,8 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stan Wielga</title>
+  <style>
+    body {
+      margin: 0;
+    }
+    h1 {
+      margin: 0;
+    }
+    #particles-js {
+      width: 100vw;
+      height: 100vh;
+      background-color: #3787a7;
+    }
+  </style>
+  <script src="particles.min.js"></script>
+  <script>
+    particlesJS.load('particles-js', 'particles.json', function() {
+      console.log('callback - particles.js config loaded');
+    });
+  </script>
 </head>
 <body>
-  <h1>Stan Wielga</h1>
+  <div id="particles-js">
+    <h1>Stan Wielga</h1>
+  </div>
 </body>
 </html>
